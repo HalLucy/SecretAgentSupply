@@ -1,0 +1,299 @@
+
+html {
+  font-family: Helvetica;
+  font-size: 18px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#header-background {
+  width: 100%;
+  height: 2.32rem;
+  background-color: black;
+}
+
+#bikes {
+  height: 25rem;
+  width: 100%;
+  background-image: url(images/moto.jpg);
+  background-size: cover;
+}
+
+#nav-background {
+  width: 100%;
+  height: 2.5rem;
+  background-color: firebrick;
+}
+
+.page-container{
+  position: absolute;
+  top: 0;
+  width: 960px;
+  left: 50%;
+  margin-left: -480px;
+}
+
+
+.page {
+  width: 960px;
+}
+
+header {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+}
+
+#logo {
+  height: 1.5rem;
+  padding: 0 1rem 0 0.5rem;
+}
+
+#logo-text {
+  color: white;
+  font-size: 1rem;
+  padding: 0.66rem 0;
+}
+
+
+#new-arrival {
+  padding-top: 9rem;
+  width: 25rem;
+}
+
+#new-arrival div{
+  padding: 2rem 3rem;
+  background-color: black;
+  background-size: cover;
+  color: white;
+}
+
+
+#new-arrival p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#new-arrival h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 2.5rem;
+  margin-top: 1rem;
+}
+
+nav {
+  width: 100%;
+  margin-top: 5.8rem;
+}
+
+nav ul {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+#mobile {
+  display: none;
+}
+
+
+#products{
+  margin-top: 3.75rem;
+  margin-bottom: 3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#products>div{
+  width: 30%;
+  height: 11rem;
+  display: flex;
+  flex-direction: column;
+  border: 4px solid black;
+}
+
+#products .picture{
+  height: 9rem;
+}
+
+#products a{
+  padding: 0.5rem 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+#pen{
+  width: 40%;
+  margin: 2rem 30%;
+  content: url("images/pen.png");
+}
+
+#watch{
+  width: 40%;
+  margin: 2rem 30%;
+  content: url("images/watch.png");
+}
+
+#glasses{
+  width: 40%;
+  margin: 3rem 30%;
+  content: url("images/glasses.png");
+}
+
+#info {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+#info div {
+  width: 336px;
+  margin-bottom: 0.2rem;
+}
+
+#info .panel {
+  width: 100%;
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding: 0.5rem 0;
+  margin-bottom: 0.2rem;
+}
+
+footer {
+  margin-top: 5.75rem;
+  color: white;
+  text-align: left;
+}
+
+#footer-background {
+  margin-top: 24.5rem;
+  height: 5rem;
+  width: 100%;
+  background-color: black;
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .page-container{
+    width: 100%;
+    left: 50%;
+    margin-left: -50%;
+  }
+
+  .page{
+    width: 100%;
+  }
+
+  #products div{
+    width: 47%;
+  }
+
+  #pen{
+    margin: 2rem 80%;
+  }
+
+  #watch{
+    margin: 2rem 80%;
+  }
+
+  #glasses-panel{
+    display: none!important;
+  }
+
+  #desktop{
+    display: none;
+  }
+
+  nav {
+    display: inline-flex;
+    justify-content: space-around;
+  }
+
+  #mobile {
+    display: inline;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  #bikes {
+    height: 15rem;
+  }
+
+  #new-arrival{
+    padding-top: 10rem;
+    width: 100%;
+  }
+
+  #new-arrival div{
+    padding: 1rem 0 1rem 2rem;
+  }
+
+  #new-arrival p {
+    font-size: 0.77rem;
+  }
+
+  #new-arrival h1 {
+    font-size: 1rem;
+    line-height: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  nav {
+    margin-top: 1.4rem;
+  }
+
+  #products {
+    justify-content: space-around;
+  }
+
+  #products div {
+    width: 90%;
+  }
+
+  #pen{
+    width: 100px!important;
+    margin: 2rem 50%;
+  }
+
+  .page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #info {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #info div {
+    width: 100%;
+    padding-bottom: 0.5rem;
+  }
+
+  #watch-panel{
+    display: none!important;
+  }
+
+  #footer-background {
+    margin-top: 28rem;
+    height: 5rem;
+  }
+
+  footer{
+    margin-top: 5rem;
+    text-align: center;
+  }
+
+}
